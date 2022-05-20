@@ -1,0 +1,80 @@
+nav{
+    background-color: rgb(239, 158, 91);
+}
+body{
+    min-height: 100%;
+}
+
+.menu{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    padding: 5px;
+    color: rgb(10, 11, 11), 24, 24 ;
+    text-decoration: none;
+    display: block;
+}
+
+.menu a:hover{
+    background-color: chartreuse;
+}
+
+.central{
+    background-color: cornflowerblue;
+    color: beige;
+    text-align: center;
+    overflow: hidden;
+    padding: 2px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse:collapse;
+    border: rgb(17, 17, 198) 5px solid;
+}
+
+tr,td{
+    width: 20%;
+    text-align: center;
+    border: 3px solid rgb(222, 120, 10);
+}
+
+caption{
+    background-color: yellow;
+    border: 3px solid rgb(32, 103, 32);
+    padding: 4px;
+}
+
+.pais, .capi{
+    background-color: rgb(37, 244, 95);
+}
+
+.pai, .capit{
+    background-color: rgb(110, 216, 168);
+}
+
+.aust{
+    background-color: rgb(156, 203, 232);
+}
+
+.fiyi{
+    background-color: rgb(235, 185, 91);
+}
+
+footer{
+    background-color: rgb(198, 237, 24);
+}
