@@ -1,0 +1,104 @@
+html{
+    background-image: url(/imagenes3/asado.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1055px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav{
+    grid-area: nav;
+    text-align: center;
+    background-color: rgb(252, 98, 52);
+    font-weight: 600;
+    padding-right: 10px;
+    height: 50px;
+}
+
+nav li{
+    display: inline-block ;
+} 
+
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: rgb(231, 207, 212);
+}
+
+nav a:hover{
+    background-color: blue;
+}
+
+ul{
+    list-style: none ;
+}
+
+nav li:hover > ul{
+    display: block;
+    background-color: azure;
+}
+
+img{
+    width: 100%;
+    float: left;
+}
+
+.ima{
+    width: 10%;
+    float: left;
+}
+
+figure{
+    padding: 5px;
+    position: relative;
+}
+
+figure:hover figcaption{
+    display: block;
+    height: 420px;
+}
+
+figcaption{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px Verdana;
+    color: rgb(246, 249, 251);
+}
+
+.er{
+    padding: 5px;
+    position: relative;
+}
+
+.er:hover .we{
+    display: inline-block;
+    height: 430px;
+}
+
+.we{
+    display: none;
+    position: absolute;
+    top: 420px;
+    left: 5px;
+    bottom: 450px;
+    right: 5px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px Verdana;
+    color: rgb(246, 249, 251);
+}
+
+section{
+    padding: 10px;
+    position: 100%
+}

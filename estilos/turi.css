@@ -1,0 +1,105 @@
+html{
+    background-image: url(/imagenes3/Oamaru.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1055px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.nav{
+    grid-area: nav;
+    text-align: center;
+    background-color: rgb(67, 231, 55);
+    font-weight: 600;
+    padding-right: 10px;
+    height: 50px;
+}
+
+nav li{
+    display: inline-block ;
+} 
+
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: rgb(16, 15, 13);
+}
+
+nav a:hover{
+    background-color: rgb(239, 151, 19);
+}
+
+ul{
+    list-style: none ;
+}
+
+nav li:hover > ul{
+    display: block;
+    background-color: azure;
+}
+
+img{
+    width: 100%;
+    float: left;
+}
+
+.ima{
+    width: 10%;
+    float: left;
+}
+
+figure{
+    padding: 5px;
+    position: relative;
+}
+
+figure:hover figcaption{
+    display: block;
+    height: 420px;
+}
+
+figcaption{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px Verdana;
+    color: rgb(246, 249, 251);
+}
+
+.er{
+    padding: 5px;
+    position: relative;
+    border-width: 10px;
+}
+
+.er:hover .we{
+    display: inline-block;
+    height: 420px;
+}
+
+.we{
+    display: none;
+    position: absolute;
+    top: 410px;
+    left: 5px;
+    bottom: 10px;
+    right: 5px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    padding: 15px;
+    font: 20px/30px Verdana;
+    color: rgb(246, 249, 251);
+}
+
+section{
+    padding: 20px;
+    position: 100%
+}

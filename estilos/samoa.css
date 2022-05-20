@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url(/imagenes4/1200px-Flag_of_Samoa.svg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1055px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav li{
+    display: inline-block ;
+} 
+
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: crimson;
+}
+
+nav a:hover{
+    background-color: blue;
+}
+
+ul{
+    list-style: none ;
+}
+
+nav li:hover > ul{
+    display: block;
+    background-color: azure;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    min-height: 100%;
+}
+
+body > *{
+    box-shadow:-1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+body{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "aside"
+    "footer"
+    ;
+}
+
+.header{
+    grid-area: header;
+    background-color:deepskyblue;
+    display: flex;
+    justify-content: space-between;
+    display: block;
+    text-decoration: none;
+}
+
+.nav{
+    grid-area: nav;
+    text-align: center;
+    background-color:lime ;
+    font-weight: 600;
+    padding-right: 10px;
+    height: 50px;
+}
+
+.section{
+    grid-area: section;
+    background-color: rgb(29, 207, 150);
+}
+
+.aside{
+    grid-area: aside;
+    background-color: rgb(224, 78, 15);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(59, 50, 227);
+}
+
+img{
+    width: 100%;
+    float: left;
+}
+img:hover{
+    filter: grayscale(80%);
+}
+
+@media (min-width:600px){
+    body{
+        grid-template-columns: 200px auto;
+        grid-template-rows: 100px 50px auto 100px; 
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "aside section"
+        "footer footer"
+        ;
+    }
+}
+
+@media(min-width:900px){
+    body{
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 100px auto 100px;
+        grid-template-areas: 
+        "nav nav nav"
+        "header section aside"
+        "footer footer footer"
+        ;
+    }
+}
+
+.ima{
+    width: 10%;
+    float: left;
+}
+
+.foro{
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
